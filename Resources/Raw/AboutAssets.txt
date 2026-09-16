@@ -1,0 +1,2 @@
+﻿Any raw assets such as markdown files or databases can be placed into this
+directory. When built, they will be available as included files in the app.

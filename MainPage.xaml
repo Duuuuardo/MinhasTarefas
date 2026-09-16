@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MinhasTarefas.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Minhas Tarefas">
+
+    <Grid
+        RowDefinitions="Auto,Auto,*,Auto"
+        Padding="20"
+        RowSpacing="15">
+
+        <!-- Linha 1: título do app -->
+        <Label
+            Text="Minhas Tarefas"
+            FontSize="24"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            Grid.Row="0" />
+
+        <!-- Linha 2: campo de texto + botão para adicionar tarefa -->
+        <HorizontalStackLayout
+            Spacing="10"
+            Grid.Row="1">
+            <Entry
+                x:Name="EntryTarefa"
+                Placeholder="Digite uma nova tarefa"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center" />
+            <Button
+                x:Name="BtnAdicionar"
+                Text="Adicionar"
+                Clicked="BtnAdicionar_Clicked"
+                VerticalOptions="Center" />
+        </HorizontalStackLayout>
+
+        <!-- Linha 3: área onde as tarefas são listadas -->
+        <ScrollView Grid.Row="2">
+            <VerticalStackLayout
+                x:Name="ListaTarefas"
+                Spacing="10" />
+        </ScrollView>
+
+        <!-- Linha 4: contador de tarefas concluídas -->
+        <Label
+            x:Name="LblContador"
+            Text="0 de 0 tarefas concluídas"
+            FontAttributes="Italic"
+            TextColor="Gray"
+            HorizontalOptions="Center"
+            Grid.Row="3" />
+    </Grid>
+</ContentPage>

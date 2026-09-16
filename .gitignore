@@ -1,0 +1,53 @@
+## .NET Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+## Visual Studio temporary files, cache results
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.nupkg
+.nuget/
+nuget.config
+
+## Custom labels
+*.orig
+
+## Rider
+.idea/
+
+## JetBrains
+.vs/
+
+## macOS
+.DS_Store
+
+## Windows
+Thumbs.db
+
+## XDG
+**/[Tt]emp/
+
+## Xamarin
+bin/
+obj/
+*.userprefs
+
+## .NET MAUI
+# Android/iOS build artifacts
+*.apk
+*.ipa
+dist/
